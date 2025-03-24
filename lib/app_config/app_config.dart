@@ -51,7 +51,7 @@ class AppConfig {
 
   final bool kIsWalletOnly = false;
 
-  List<String> get defaultCoins => ['KMD', 'DGB-segwit', 'CHTA', 'NENG'];
+  List<String> get defaultCoins => ['CHTA', 'KMD', 'NENG'];
   List<String> get coinsFiat => ['BTC-segwit', 'KMD'];
   List<String> get walletOnlyCoins => [
         'AAVE-FTM20',
