@@ -49,9 +49,9 @@ class AppConfig {
   String get appCompanyLong => 'Komodo Platform';
   String get appCompanyShort => 'Komodo';
 
-  final bool kIsWalletOnly = !kDebugMode;
+  final bool kIsWalletOnly = false;
 
-  List<String> get defaultCoins => ['KMD', 'BTC-segwit'];
+  List<String> get defaultCoins => ['CHTA', 'KMD', 'NENG'];
   List<String> get coinsFiat => ['BTC-segwit', 'KMD'];
   List<String> get walletOnlyCoins => [
         'AAVE-FTM20',
