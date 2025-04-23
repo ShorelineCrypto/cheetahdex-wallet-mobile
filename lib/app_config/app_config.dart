@@ -45,7 +45,7 @@ class AppConfig {
 
   // Brand config below
 
-  String get appName => 'Komodo Wallet';
+  String get appName => 'Cheetahdex Wallet';
   String get appCompanyLong => 'Komodo Platform';
   String get appCompanyShort => 'Komodo';
 
