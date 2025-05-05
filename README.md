@@ -1,5 +1,12 @@
 # Cheetahdex-Wallet-Mobile - Open Source GitHub Repository 🚀
 
+<p align="center">
+    <a href="https://github.com/ShorelineCrypto/cheetahdex-wallet-mobile" alt="Cheetahdex Wallet">
+        <img width="420" alt="cheetahdex-wallet-logo_dark-theme" src="https://raw.githubusercontent.com/ShorelineCrypto/cheetahdex-wallet-desktop/cheetahdex/assets/logo/dex-logo.png">
+    </a>
+</p>
+
+
 Welcome to the Cheetahdex Wallet Mobile open-source repository! This cutting-edge project is brought to you by ShorelineCrypto, providing a mighty non-custodial wallet and decentralised exchange all in one mobile app. Take control of your cryptocurrencies and trade seamlessly on your mobile phone or tablet with Cheetahdex Wallet!
 
 <p float="center">
