@@ -3,7 +3,7 @@
 set -eu
 
 # Git branch of Komodo DeFi Framework to build
-BRANCH=${1:-main}
+BRANCH=${1:-cheetahdex}
 # Enable screenshots (disabled by default for security, but can be useful during testing)
 ALLOW_SCREENSHOTS=${2:-false}
 
