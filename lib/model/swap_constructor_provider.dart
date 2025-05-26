@@ -112,7 +112,7 @@ class ConstructorProvider extends ChangeNotifier {
             ? _matchingOrder.price
             : _matchingOrder.price.inverse;
 
-        final Rational maxOrderAmt = _matchingOrder.maxVolume / price;
+        final Rational maxOrderAmt = _matchingOrder.maxVolume;
         // if > than order max volume
         if (value > maxOrderAmt) {
           value = maxOrderAmt;
