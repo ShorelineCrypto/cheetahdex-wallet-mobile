@@ -60,7 +60,7 @@ class TradeForm {
     final double maxAmount = _getMaxSellAmount();
     if (amount.toDouble() >= maxAmount) {
       amount = Rational.parse(maxAmount.toString());
-      swapBloc.setIsMaxActive(true);
+      swapBloc.setIsMaxActive(false);
     } else {
       swapBloc.setIsMaxActive(false);
     }
