@@ -68,7 +68,8 @@ https://github.com/KomodoPlatform/AtomicDEX-mobile/wiki/Project-Setup#build-and-
 To build from a container without installing Flutter on an x86_64 machine (Linux or Windows) with Docker or Podman installed, you can use the provided Dockerfile.
 
 ```bash
-sh .docker/build_apk_release.sh
+mkdir build
+bash .docker/build_apk_release.sh
 ```
 
 You can also manually build using docker with the following commands:
