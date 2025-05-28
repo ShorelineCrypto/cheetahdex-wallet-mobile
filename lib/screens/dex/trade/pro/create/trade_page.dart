@@ -385,10 +385,10 @@ class _TradePageState extends State<TradePage> with TickerProviderStateMixin {
     final Rational bidPrice = fract2rat(bid.priceFract);
     final Rational bidVolume = fract2rat(bid.maxvolumeFract);
 
-    if (amountSell > bidVolume * bidPrice) {
-      tradeForm.updateAmountSell(bidVolume * bidPrice);
-      swapBloc.setIsMaxActive(false);
-    }
+   // if (amountSell > bidVolume * bidPrice) {
+   //   tradeForm.updateAmountSell(bidVolume * bidPrice);
+   //   swapBloc.setIsMaxActive(false);
+   // }
   }
 
   void _showSnackbar(String text) {

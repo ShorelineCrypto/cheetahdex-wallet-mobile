@@ -56,30 +56,13 @@ class TradeForm {
   }
 
   void updateAmountSell(Rational amount) {
-    // If greater than max available balance
-    final double maxAmount = _getMaxSellAmount();
-    if (amount.toDouble() >= maxAmount) {
-      amount = Rational.parse(maxAmount.toString());
-      swapBloc.setIsMaxActive(true);
-    } else {
-      swapBloc.setIsMaxActive(false);
-    }
-
+ 
     final Ask matchingBid = swapBloc.matchingBid;
     if (matchingBid != null) {
       final Rational bidPrice = fract2rat(matchingBid.priceFract) ??
           Rational.parse(matchingBid.price);
       final Rational bidVolume = fract2rat(matchingBid.maxvolumeFract) ??
           Rational.parse(matchingBid.maxvolume.toString());
-
-      // If greater than matching bid max receive volume
-      if (amount >= (bidVolume * bidPrice)) {
-        amount = bidVolume * bidPrice;
-        swapBloc.setIsMaxActive(false);
-        swapBloc.shouldBuyOut = true;
-      } else {
-        swapBloc.shouldBuyOut = false;
-      }
 
       final Rational amountReceive = amount / bidPrice;
       updateAmountReceive(amountReceive);
