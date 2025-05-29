@@ -46,8 +46,8 @@ class AppConfig {
   // Brand config below
 
   String get appName => 'Cheetahdex Wallet';
-  String get appCompanyLong => 'Komodo Platform';
-  String get appCompanyShort => 'Komodo';
+  String get appCompanyLong => 'ShorelineCrypto';
+  String get appCompanyShort => 'ShorelineCrypto';
 
   final bool kIsWalletOnly = false;
 
