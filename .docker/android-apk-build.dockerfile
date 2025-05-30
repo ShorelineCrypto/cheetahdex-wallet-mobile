@@ -44,3 +44,4 @@ COPY --from=build --chown=$USER:$USER ${ANDROID_ARMV7_LIB_SRC} ${ANDROID_ARMV7_L
 RUN flutter config --no-analytics  \
     && yes "y" | flutter doctor --android-licenses \
     && flutter doctor
+RUN sudo chmod a+rwx  /app
