@@ -216,7 +216,7 @@ class AppConfig {
 
   // endpoint source code (currently same as news feed endpoint):
   // https://github.com/KomodoPlatform/discord_feed_parser
-  bool get isUpdateCheckerEnabled => true;
+  bool get isUpdateCheckerEnabled => false;
   String get updateCheckerEndpoint => 'https://komodo.earth/adexversion';
 
   // endpoint source code:
