@@ -9,8 +9,8 @@ fi
 
 # get coins file
 coins_repo_commit="$( jq -r '.coins_repo_commit' coins_ci.json )"
-curl -l "https://raw.githubusercontent.com/komodoce/coins-ce/${coins_repo_commit}/coins" --output "assets/coins.json"
-curl -l "https://raw.githubusercontent.com/komodoce/coins-ce/${coins_repo_commit}/utils/coins_config_tcp.json" --output "assets/coins_config_tcp.json"
+curl -l "https://raw.githubusercontent.com/KomodoPlatform/coins/${coins_repo_commit}/coins" --output "assets/coins.json"
+curl -l "https://raw.githubusercontent.com/KomodoPlatform/coins/${coins_repo_commit}/utils/coins_config_tcp.json" --output "assets/coins_config_tcp.json"
 
 # get assets lists
 jq -r 'keys | .[]' assets/coins_config_tcp.json > app_assets

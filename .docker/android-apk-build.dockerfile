@@ -29,8 +29,8 @@ COPY --chown=$USER:$USER . .
 RUN rm -f assets/coins.json && rm -f assets/coins_config.json && \
     sudo rm -rf build/* && \ 
     mkdir -p build && \
-    curl -o assets/coins.json https://raw.githubusercontent.com/komodoce/coins-ce/master/coins && \
-    curl -o assets/coins_config.json https://raw.githubusercontent.com/komodoce/coins-ce/master/utils/coins_config.json && \
+    curl -o assets/coins.json https://raw.githubusercontent.com/KomodoPlatform/coins/master/coins && \
+    curl -o assets/coins_config.json https://raw.githubusercontent.com/KomodoPlatform/coins/master/utils/coins_config.json && \
     mkdir -p android/app/src/main/cpp/libs/armeabi-v7a && \
     mkdir -p android/app/src/main/cpp/libs/arm64-v8a && \
     git clone https://github.com/flutter/flutter.git ${FLUTTER_HOME} && \
